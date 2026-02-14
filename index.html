@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive guide for international students applying to US universities - undergraduate, graduate, doctoral, and postdoc programs">
+    <title>International Student Admission Guide - US Universities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <div class="logo-text">
+                    <h1>US University Admission Guide</h1>
+                    <div class="logo-subtitle">For International Students</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <div class="app-container">
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-section="home">🏠 Home</button>
+            <button class="nav-tab" data-section="undergraduate">🎒 Undergraduate</button>
+            <button class="nav-tab" data-section="graduate">📚 Graduate</button>
+            <button class="nav-tab" data-section="doctoral">🔬 Doctoral</button>
+            <button class="nav-tab" data-section="postdoc">🧪 Postdoc</button>
+            <button class="nav-tab" data-section="tests">📝 Tests</button>
+            <button class="nav-tab" data-section="documents">📄 Documents</button>
+            <button class="nav-tab" data-section="financial">💰 Financial</button>
+            <button class="nav-tab" data-section="visa">🛂 Visa</button>
+            <button class="nav-tab" data-section="tools">🛠️ Tools</button>
+        </nav>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="content-section active">
+            <div class="section-header">
+                <h2>Welcome to Your US University Journey</h2>
+                <p class="section-intro">Navigate the complex world of US university admissions with confidence. This comprehensive guide covers everything from undergraduate to postdoctoral positions.</p>
+            </div>
+
+            <!-- Quick Start Cards -->
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">Choose Your Path</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Select your desired degree level to get customized guidance for your specific journey.</p>
+                        <ul>
+                            <li>Undergraduate (Bachelor's)</li>
+                            <li>Graduate (Master's)</li>
+                            <li>Doctoral (PhD)</li>
+                            <li>Postdoctoral Positions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">Track Progress</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Use our interactive checklist to stay organized throughout your application process.</p>
+                        <div class="progress-tracker">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="homeProgress" style="width: 0%"></div>
+                            </div>
+                            <div class="progress-text">0% Complete</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">⏰</div>
+                        <h3 class="card-title">Plan Timeline</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Generate a personalized timeline based on your target admission semester.</p>
+                        <button class="btn btn-primary" onclick="navigateToSection('tools')">Create Timeline</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Resources -->
+            <div class="card mt-lg">
+                <h3>🚀 Quick Start Guide</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4 class="accordion-title">Step 1: Research & Self-Assessment</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Identify your academic goals, research interests, and career aspirations. Consider program rankings, faculty expertise, location, and funding opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4 class="accordion-title">Step 2: Prepare for Standardized Tests</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Most programs require TOEFL/IELTS for English proficiency. Additionally, prepare for GRE (graduate), GMAT (business), or SAT/ACT (undergraduate).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4 class="accordion-title">Step 3: Gather Documents</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Collect transcripts, letters of recommendation, CV/resume, statement of purpose, and financial documents.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h4 class="accordion-title">Step 4: Apply & Follow Up</h4>
+                            <span class="accordion-icon">▼</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-body">
+                                <p>Submit applications before deadlines, monitor status, and prepare for interviews if required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UNDERGRADUATE SECTION -->
+        <section id="undergraduate" class="content-section">
+            <div class="section-header">
+                <h2>Undergraduate Admission Guide</h2>
+                <p class="section-intro">Complete pathway to earning your Bachelor's degree at a US university</p>
+            </div>
+
+            <div class="alert alert-info">
+                <strong>💡 Key Insight:</strong> US undergraduate admissions are holistic, considering academics, extracurriculars, essays, and personal qualities.
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Academic Requirements</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>High School Transcripts:</strong> Official records with grade conversion</li>
+                            <li><strong>SAT/ACT:</strong> Most schools test-optional, but competitive scores help</li>
+                            <li><strong>English Proficiency:</strong> TOEFL (80+) or IELTS (6.5+)</li>
+                            <li><strong>GPA:</strong> Typically 3.0+ on 4.0 scale</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">✍️</div>
+                        <h3 class="card-title">Application Components</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Personal Essay:</strong> Common App or university-specific</li>
+                            <li><strong>Recommendations:</strong> 2-3 letters from teachers/counselors</li>
+                            <li><strong>Activities List:</strong> Extracurriculars, leadership, volunteering</li>
+                            <li><strong>Portfolio:</strong> For arts/architecture programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>📅 Timeline for Fall 2027 Admission</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Spring 2026 (Junior Year)</div>
+                        <div class="timeline-content">
+                            <h4>Preparation Phase</h4>
+                            <p>Take SAT/ACT, visit campuses, build extracurricular profile</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Summer 2026</div>
+                        <div class="timeline-content">
+                            <h4>Application Planning</h4>
+                            <p>Finalize college list, draft essays, request recommendations</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">September - November 2026</div>
+                        <div class="timeline-content">
+                            <h4>Early Applications</h4>
+                            <p>Submit Early Action/Decision apps (deadline: Nov 1)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 2026 - January 2027</div>
+                        <div class="timeline-content">
+                            <h4>Regular Decision</h4>
+                            <p>Submit remaining applications (deadline: Jan 1-15)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March - April 2027</div>
+                        <div class="timeline-content">
+                            <h4>Decisions & Selection</h4>
+                            <p>Receive admissions decisions, compare offers, commit by May 1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRADUATE SECTION -->
+        <section id="graduate" class="content-section">
+            <div class="section-header">
+                <h2>Graduate (Master's) Admission Guide</h2>
+                <p class="section-intro">Advance your career with a Master's degree from a US university</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">Requirements</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Bachelor's Degree:</strong> From accredited institution</li>
+                            <li><strong>GRE/GMAT:</strong> GRE for most programs, GMAT for business</li>
+                            <li><strong>TOEFL/IELTS:</strong> 90+/7.0+ typically required</li>
+                            <li><strong>GPA:</strong> 3.0+ preferred, 3.5+ for top programs</li>
+                            <li><strong>Work Experience:</strong> Preferred for some programs (MBA, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">Application Materials</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Statement of Purpose:</strong> 500-1,000 words on goals</li>
+                            <li><strong>Letters of Recommendation:</strong> 2-3 from professors/employers</li>
+                            <li><strong>Resume/CV:</strong> Academic and professional experience</li>
+                            <li><strong>Writing Sample:</strong> For humanities/social sciences</li>
+                            <li><strong>Transcripts:</strong> Official from all universities attended</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>💡 Pro Tips for Master's Applications</h3>
+                <div class="grid grid-2 mt-md">
+                    <div class="alert alert-success">
+                        <strong>✅ DO:</strong> Tailor your statement to each program's strengths and your research interests
+                    </div>
+                    <div class="alert alert-success">
+                        <strong>✅ DO:</strong> Contact potential advisors before applying
+                    </div>
+                    <div class="alert alert-danger">
+                        <strong>❌ DON'T:</strong> Submit generic applications without program-specific details
+                    </div>
+                    <div class="alert alert-danger">
+                        <strong>❌ DON'T:</strong> Miss funding application deadlines (often earlier than admission deadlines)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCTORAL SECTION -->
+        <section id="doctoral" class="content-section">
+            <div class="section-header">
+                <h2>Doctoral (PhD) Admission Guide</h2>
+                <p class="section-intro">Pursue advanced research and become an expert in your field</p>
+            </div>
+
+            <div class="alert alert-warning">
+                <strong>⚠️ Important:</strong> PhD admissions are highly competitive and research-focused. Most US PhDs are fully funded with stipends.
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🔬</div>
+                        <h3 class="card-title">PhD Requirements</h3>
+</div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Master's Degree:</strong> Preferred but not always required</li>
+                            <li><strong>Research Experience:</strong> Critical - publications, projects</li>
+                            <li><strong>GRE:</strong> Required for many programs (some waiving)</li>
+                            <li><strong>Strong Academic Record:</strong> 3.5+ GPA typically</li>
+                            <li><strong>Faculty Match:</strong> Aligned research interests</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📄</div>
+                        <h3 class="card-title">Critical Documents</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Research Statement:</strong> Detailed research proposal (2-3 pages)</li>
+                            <li><strong>Strong Recommendations:</strong> 3 from research supervisors</li>
+                            <li><strong>CV:</strong> Emphasize publications, presentations, grants</li>
+                            <li><strong>Writing Sample:</strong> Published paper or thesis chapter</li>
+                            <li><strong>Contact with Faculty:</strong> Email potential advisors early</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>🎯 Finding the Right PhD Program</h3>
+                <ol>
+                    <li><strong>Research Faculty:</strong> Identify 2-3 potential advisors whose work aligns with yours</li>
+                    <li><strong>Email Professors:</strong> Send concise emails expressing interest (September-November)</li>
+                    <li><strong>Check Funding:</strong> Confirm program offers full funding + stipend</li>
+                    <li><strong>Program Fit:</strong> Consider departmental culture, resources, and alumni outcomes</li>
+                    <li><strong>Apply Strategically:</strong> 6-8 programs with varied competitiveness</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- POSTDOC SECTION -->
+        <section id="postdoc" class="content-section">
+            <div class="section-header">
+                <h2>Postdoctoral Position Guide</h2>
+                <p class="section-intro">Advance your research career with a postdoctoral appointment</p>
+            </div>
+
+            <div class="card">
+                <h3>🧪 Understanding Postdoc Positions</h3>
+                <p>Postdoctoral positions are temporary research appointments designed to provide additional training and experience beyond the PhD. They typically last 1-3 years.</p>
+            </div>
+
+            <div class="grid grid-2 mt-md">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">Application Process</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Direct Contact:</strong> Email potential PIs directly</li>
+                            <li><strong>Job Boards:</strong> Higher Ed Jobs, Nature Careers,Indeed</li>
+                            <li><strong>CV:</strong> Emphasize publications and research impact</li>
+                            <li><strong>Cover Letter:</strong> Research fit and future plans</li>
+                            <li><strong>References:</strong> 3 letters, including PhD advisor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">💼</div>
+                        <h3 class="card-title">Visa Options</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>J-1 Visa:</strong> Most common for postdocs</li>
+                            <li><strong>H-1B Visa:</strong> Available but less common</li>
+                            <li><strong>F-1 OPT:</strong> If transitioning from PhD</li>
+                            <li><strong>Salary Range:</strong> $50,000-$70,000 typically</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTS SECTION -->
+        <section id="tests" class="content-section">
+            <div class="section-header">
+                <h2>Standardized Tests Guide</h2>
+                <p class="section-intro">Navigate required tests for international students</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🗣️</div>
+                        <h3 class="card-title">English Proficiency</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>TOEFL iBT</h4>
+                        <ul>
+                            <li>Minimum: 80, Competitive: 100+</li>
+                            <li>Test Duration: 3 hours</li>
+                            <li>Cost: $200-300</li>
+                        </ul>
+                        <h4 class="mt-md">IELTS Academic</h4>
+                        <ul>
+                            <li>Minimum: 6.5, Competitive: 7.0+</li>
+                            <li>Test Duration: 2h 45min</li>
+                            <li>Cost: $215-250</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Graduate Admissions</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>GRE General</h4>
+                        <ul>
+                            <li>For: Most graduate programs</li>
+                            <li>Score Range: 260-340</li>
+                            <li>Competitive: 320+</li>
+                            <li>Cost: $220</li>
+                        </ul>
+                        <h4 class="mt-md">GMAT</h4>
+                        <ul>
+                            <li>For: Business schools (MBA)</li>
+                            <li>Score Range: 200-800</li>
+                            <li>Competitive: 700+</li>
+                            <li>Cost: $275</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎓</div>
+                        <h3 class="card-title">Undergraduate Admissions</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>SAT</h4>
+                        <ul>
+                            <li>Score Range: 400-1600</li>
+                            <li>Competitive: 1400+</li>
+                            <li>Cost: $60 ($103 international)</li>
+                        </ul>
+                        <h4 class="mt-md">ACT</h4>
+                        <ul>
+                            <li>Score Range: 1-36</li>
+                            <li>Competitive: 30+</li>
+                            <li>Cost: $68 ($118 international)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Preparation Resources</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Official Practice:</strong> ETS, College Board</li>
+                            <li><strong>Test Prep:</strong> Magoosh, Manhattan Prep, Kaplan</li>
+                            <li><strong>Timeline:</strong> Start 3-6 months before application</li>
+                            <li><strong>Retakes:</strong> Allowed, schools often superscore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCUMENTS SECTION -->
+        <section id="documents" class="content-section">
+            <div class="section-header">
+                <h2>Application Documents Guide</h2>
+                <p class="section-intro">Prepare compelling application materials</p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3 class="accordion-title">📝 Statement of Purpose (SOP)</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h4>Structure:</h4>
+                            <ol>
+                                <li><strong>Introduction:</strong> Hook + background (1 paragraph)</li>
+                                <li><strong>Academic Journey:</strong> Relevant experiences, research (2-3 paragraphs)</li>
+                                <li><strong>Research Interests:</strong> Specific topics, why this program (2 paragraphs)</li>
+                                <li><strong>Future Goals:</strong> Career aspirations, how degree helps (1 paragraph)</li>
+                                <li><strong>Conclusion:</strong> Why you're a good fit (1 paragraph)</li>
+                            </ol>
+                            <div class="alert alert-info mt-md">
+                                <strong>Length:</strong> 500-1,000 words (follow program guidelines)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3 class="accordion-title">✉️ Letters of Recommendation</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h4>Who to Ask:</h4>
+                            <ul>
+                                <li>Research supervisors who know your work deeply</li>
+                                <li>Professors from relevant coursework (A grades)</li>
+                                <li>Employers (for professional programs)</li>
+                            </ul>
+                            <h4 class="mt-md">How to Ask:</h4>
+                            <ol>
+                                <li>Ask 2-3 months before deadline</li>
+                                <li>Provide CV, statement, and program details</li>
+                                <li>Send reminder 2 weeks before deadline</li>
+                                <li>Waive right to view (shows confidence)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3 class="accordion-title">📄 Resume/CV</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <h4>Academic CV Sections:</h4>
+                            <ul>
+                                <li><strong>Education:</strong> Degrees, GPA, honors</li>
+                                <li><strong>Research Experience:</strong> Projects, methodologies, outcomes</li>
+                                <li><strong>Publications:</strong> Papers, presentations, posters</li>
+                                <li><strong>Teaching:</strong> TA positions, tutoring</li>
+                                <li><strong>Awards:</strong> Scholarships, fellowships, grants</li>
+                                <li><strong>Skills:</strong> Technical, language, software</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3 class="accordion-title">📜 Transcripts</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><strong>Official Transcripts:</strong> Sealed envelope from university</li>
+                                <li><strong>Grade Conversion:</strong> May need WES/ECE evaluation</li>
+                                <li><strong>Translation:</strong> Must be certified if not in English</li>
+                                <li><strong>All Institutions:</strong> Include every university attended</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINANCIAL SECTION -->
+        <section id="financial" class="content-section">
+            <div class="section-header">
+                <h2>Financial Planning Guide</h2>
+                <p class="section-intro">Understanding costs and funding opportunities</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Cost Calculator</h3>
+                <div class="grid grid-2 mt-md">
+                    <div class="form-group">
+                        <label class="form-label">Program Type</label>
+                        <select class="form-select" id="programType" onchange="calculateCosts()">
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate (Master's)</option>
+                            <option value="doctoral">Doctoral (PhD)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Location</label>
+                        <select class="form-select" id="location" onchange="calculateCosts()">
+                            <option value="low">Low Cost (Rural/Small City)</option>
+                            <option value="medium">Medium Cost (Mid-Size City)</option>
+                            <option value="high">High Cost (Major City/Coastal)</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="costBreakdown" class="mt-md">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="grid grid-2 mt-md">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎓</div>
+                        <h3 class="card-title">Funding for Undergraduates</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Merit Scholarships:</strong> Based on academic/test scores</li>
+                            <li><strong>Need-Based Aid:</strong> Limited for internationals</li>
+                            <li><strong>Athletic Scholarships:</strong> NCAA sports</li>
+                            <li><strong>Private Scholarships:</strong> Fulbright, foundations</li>
+                        </ul>
+                        <div class="alert alert-warning mt-md">
+                            <strong>Note:</strong> Very few US schools offer full aid to international undergrads
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">💼</div>
+                        <h3 class="card-title">Funding for Graduate Students</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul>
+                            <li><strong>Assistantships:</strong> TA/RA positions (tuition + stipend)</li>
+                            <li><strong>Fellowships:</strong> Competitive, full funding</li>
+                            <li><strong>Research Grants:</strong> Faculty-funded projects</li>
+                            <li><strong>External Funding:</strong> Fulbright, home country scholarships</li>
+                        </ul>
+                        <div class="alert alert-success mt-md">
+                            <strong>PhD:</strong> Most US PhD programs offer full funding (5-6 years)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISA SECTION -->
+        <section id="visa" class="content-section">
+            <div class="section-header">
+                <h2>Student Visa Guide</h2>
+                <p class="section-intro">Navigate the US student visa process</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🛂</div>
+                        <h3 class="card-title">F-1 Student Visa</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>Process:</h4>
+                        <ol>
+                            <li>Receive I-20 from university</li>
+                            <li>Pay SEVIS fee ($350)</li>
+                            <li>Complete DS-160 form</li>
+                            <li>Schedule visa interview</li>
+                            <li>Attend interview with documents</li>
+                        </ol>
+                        <h4 class="mt-md">Required Documents:</h4>
+                        <ul>
+                            <li>Valid passport</li>
+                            <li>I-20 form</li>
+                            <li>Admission letter</li>
+                            <li>Financial proof</li>
+                            <li>SEVIS receipt</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🔄</div>
+                        <h3 class="card-title">J-1 Exchange Visa</h3>
+                    </div>
+                    <div class="card-content">
+                        <h4>Common for:</h4>
+                        <ul>
+                            <li>Postdoctoral researchers</li>
+                            <li>Visiting scholars</li>
+                            <li>Some graduate programs</li>
+                        </ul>
+                        <h4 class="mt-md">Key Difference:</h4>
+                        <p>J-1 visa holders receive DS-2019 instead of I-20. May have 2-year home residency requirement.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>💼 Work Authorization</h3>
+                <div class="grid grid-3 mt-md">
+                    <div>
+                        <h4>On-Campus Work</h4>
+                        <ul>
+                            <li>Up to 20 hours/week during semester</li>
+                            <li>Full-time during breaks</li>
+                            <li>No special authorization needed</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>CPT (Curricular Practical Training)</h4>
+                        <ul>
+                            <li>Internships related to studies</li>
+                            <li>Before graduation</li>
+                            <li>Must be part of curriculum</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>OPT (Optional Practical Training)</h4>
+                        <ul>
+                            <li>12 months post-graduation</li>
+                            <li>24-month STEM extension available</li>
+                            <li>Must be in field of study</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOOLS SECTION -->
+        <section id="tools" class="content-section">
+            <div class="section-header">
+                <h2>Interactive Tools</h2>
+                <p class="section-intro">Planners and calculators to organize your application</p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Timeline Generator</h3>
+                <p>Generate a personalized application timeline based on your target admission date.</p>
+                <div class="grid grid-2 mt-md">
+                    <div class="form-group">
+                        <label class="form-label">Degree Level</label>
+                        <select class="form-select" id="timelineDegree">
+                            <option value="undergraduate">Undergraduate</option>
+                            <option value="graduate">Graduate (Master's)</option>
+                            <option value="doctoral">Doctoral (PhD)</option>
+                            <option value="postdoc">Postdoc</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Target Admission Semester</label>
+                        <select class="form-select" id="admissionSemester">
+                            <option value="fall2027">Fall 2027</option>
+                            <option value="spring2027">Spring 2027</option>
+                            <option value="fall2026">Fall 2026</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary mt-md" onclick="generateTimeline()">Generate Timeline</button>
+                <div id="timelineOutput" class="mt-lg"></div>
+            </div>
+
+            <div class="card mt-md">
+                <h3>✅ Document Checklist</h3>
+                <p>Track your application materials. Your progress is saved automatically.</p>
+                <div class="form-group mt-md">
+                    <label class="form-label">Select Degree Level</label>
+                    <select class="form-select" id="checklistDegree" onchange="loadChecklist()">
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="graduate">Graduate (Master's)</option>
+                        <option value="doctoral">Doctoral (PhD)</option>
+                        <option value="postdoc">Postdoc</option>
+                    </select>
+                </div>
+                <div id="checklistOutput" class="mt-md"></div>
+                <button class="btn btn-secondary mt-md" onclick="printChecklist()">Print Checklist</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-credit">
+                <p>Conceptualized and Developed by <a href="https://www.linkedin.com/in/beingbabu/" target="_blank" rel="noopener">Professor Babu George</a></p>
+            </div>
+            <div class="footer-disclaimer">
+                <strong>Legal Disclaimer:</strong> The information provided in this guide is for general informational purposes only and should not be considered as professional advice. While we strive to provide accurate and up-to-date information, admission requirements, visa regulations, and policies may change without notice. We make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained herein. Users are strongly advised to verify all information with official university websites and relevant government agencies. We shall not be liable for any loss or damage, including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this guide. Your use of this information is at your own risk.
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
